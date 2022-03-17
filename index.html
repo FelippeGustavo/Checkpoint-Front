@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Filme Favorito</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+
+    <h1>Qual é o seu Marvel favorito?</h1>
+
+    <p>Temos uma mega surpresa para comemorar a entrada da primeira atriz brasileira no mundo da Marvel</p>
+    <p>Tá a fim de levar um acompanhante para a Marvel Super Hero Island? </p>
+
+    <h2>Sim!!!! Quero participar</h2>
+
+    <h2>Para participar compatilha aqui o seu filme favorito da Marvel:</h2>
+
+    <form action="/dados-form" method="post">
+        <div>
+            <label for="nome_filme">Nome do Filme:</label>
+            <input type="text" id="nome" />
+        </div>
+        <div>
+            <label for="ano_lancamento">Ano de lançamento:</label>
+            <input type="number" id="ano" />
+        </div>
+        <div>
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao"></textarea>
+        </div>
+        <div>
+            <label for="foto">URL Foto:</label>
+            <input type="url" id="foto" />
+        </div>
+        <div class="button">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+  </body>
+</html>
