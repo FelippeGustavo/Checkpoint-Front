@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Filme Favorito</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
 
-    <h1>Qual é o seu Marvel favorito?</h1>
+<head>
+  <title>Filme Favorito</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
 
-    <p>Temos uma mega surpresa para comemorar a entrada da primeira atriz brasileira no mundo da Marvel</p>
-    <p>Tá a fim de levar um acompanhante para a Marvel Super Hero Island? </p>
-
-    <h2>Sim!!!! Quero participar</h2>
-
-    <h2>Para participar compatilha aqui o seu filme favorito da Marvel:</h2>
-
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <h1>Qual é o seu Marvel favorito?</h1>
+  <p>Temos uma mega surpresa para comemorar a entrada da primeira atriz brasileira no mundo da Marvel</p>
+  <p>Tá a fim de levar um acompanhante para a Marvel Super Hero Island? </p>
+  <h2>Para participar compatilha aqui o seu filme favorito da Marvel:</h2>
+  <div class="form">
     <form action="/dados-form" method="post">
-        <div>
-            <label for="nome_filme">Nome do Filme:</label>
-            <input type="text" id="nome" />
-        </div>
-        <div>
-            <label for="ano_lancamento">Ano de lançamento:</label>
-            <input type="number" id="ano" />
-        </div>
-        <div>
-            <label for="descricao">Descrição:</label>
-            <textarea id="descricao"></textarea>
-        </div>
-        <div>
-            <label for="foto">URL Foto:</label>
-            <input type="url" id="foto" />
-        </div>
-        <div class="button">
-            <button type="submit">Enviar</button>
-        </div>
+      <h3>Preencha Aqui 🎬</h3>
+      <div>
+        <label for="username">Nome</label>
+        <input type="text" id="nome" placeholder="Nome do Filme" />
+      </div>
+      <div>
+        <label for="username">Ano</label>
+        <input type="number" id="ano" placeholder="Ano de Lançamento" />
+      </div>
+      <div>
+        <label for="username">Sobre</label>
+        <textarea id="descricao" class="desc" placeholder="Descrição"></textarea>
+      </div>
+      <div>
+        <label for="username">Capa</label>
+        <input type="url" id="foto" placeholder="URL Foto" />
+      </div>
+      <div class="button">
+        <button type="submit">Enviar</button>
+      </div>
     </form>
-  </body>
+  </div>
+</body>
+
 </html>
