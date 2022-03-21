@@ -1,23 +1,11 @@
+const btn = document.querySelector(".sub");
+btn.addEventListener("click", function(f){
 
-const form = document.querySelector("form");
+f.preventDefault();
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  const input = document.querySelector("input");
-  const text = document.createTextNode(input.value);
-  document.body.appendChild(text);
+const name=document.querySelectorAll("#forms")
+const inputs = document.createTextNode(forms.value);
+document.body.appendChild(inputs);
+console.log(inputs)
 
-  document.querySelector(".remove").click();
-});
-const forms= document.querySelector("form");
-const input = document.querySelector("input");
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const text = document.createTextNode(input.value);
-
-  document.body.appendChild(text);
-
-  form.reset();
-});
+})
